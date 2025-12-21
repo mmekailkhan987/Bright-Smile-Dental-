@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bright Smile Dental | Modern & Gentle Care</title>
-    
+
     <!-- Import Map -->
     <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@^19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-        "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+          "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+        }
       }
-    }
     </script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,58 +34,59 @@
           extend: {
             colors: {
               teal: {
-                50: '#f0fdfa',
-                100: '#ccfbf1',
-                200: '#99f6e4',
-                300: '#5eead4',
-                400: '#2dd4bf',
-                500: '#14b8a6',
-                600: '#0d9488', // Primary Brand
-                700: '#0f766e',
-                800: '#115e59',
-                900: '#134e4a',
+                50: "#f0fdfa",
+                100: "#ccfbf1",
+                200: "#99f6e4",
+                300: "#5eead4",
+                400: "#2dd4bf",
+                500: "#14b8a6",
+                600: "#0d9488", // Primary Brand
+                700: "#0f766e",
+                800: "#115e59",
+                900: "#134e4a",
               },
               cyan: {
-                50: '#ecfeff',
-                100: '#cffafe',
-                400: '#22d3ee',
-                500: '#06b6d4',
-                600: '#0891b2', // Secondary Brand
-                900: '#164e63',
+                50: "#ecfeff",
+                100: "#cffafe",
+                400: "#22d3ee",
+                500: "#06b6d4",
+                600: "#0891b2", // Secondary Brand
+                900: "#164e63",
               },
               slate: {
-                850: '#1e293b',
-              }
+                850: "#1e293b",
+              },
             },
             fontFamily: {
-              serif: ['Playfair Display', 'serif'],
-              sans: ['Inter', 'sans-serif'],
+              serif: ["Playfair Display", "serif"],
+              sans: ["Inter", "sans-serif"],
             },
             animation: {
-              'infinite-scroll': 'infinite-scroll 25s linear infinite',
-              'blob': 'blob 7s infinite',
-              'fade-up': 'fadeUp 0.8s ease-out forwards',
+              "infinite-scroll": "infinite-scroll 25s linear infinite",
+              blob: "blob 7s infinite",
+              "fade-up": "fadeUp 0.8s ease-out forwards",
             },
             keyframes: {
-              'infinite-scroll': {
-                from: { transform: 'translateX(0)' },
-                to: { transform: 'translateX(-100%)' },
+              "infinite-scroll": {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(-100%)" },
               },
               blob: {
-                '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                "0%": { transform: "translate(0px, 0px) scale(1)" },
+                "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                "100%": { transform: "translate(0px, 0px) scale(1)" },
               },
               fadeUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
-            }
-          }
-        }
-      }
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
     </script>
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -94,16 +98,120 @@
         background-color: #f8fafc;
       }
       .no-scrollbar::-webkit-scrollbar {
-          display: none;
+        display: none;
       }
       .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
 
     <!-- ✅ n8n Chat Widget CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Custom Chat Styling (Blue / Tidio-like) -->
+    <style>
+      :root {
+        --chat--font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+          Arial, sans-serif;
+
+        /* Primary */
+        --chat--color-primary: #2f6bff;
+        --chat--color-primary-shade-50: #2458db;
+        --chat--color-primary-shade-100: #1d47b6;
+
+        /* Shape & size */
+        --chat--border-radius: 22px;
+        --chat--window--width: 380px;
+        --chat--window--height: 560px;
+
+        /* Shadow */
+        --chat--window--box-shadow: 0 18px 55px rgba(16, 24, 40, 0.22);
+      }
+
+      /* Round the whole widget */
+      .n8n-chat__window,
+      .n8n-chat__container,
+      .n8n-chat__frame {
+        border-radius: 22px !important;
+        overflow: hidden !important;
+      }
+
+      /* Gradient header */
+      .n8n-chat__header {
+        background: linear-gradient(135deg, #2f6bff 0%, #58a6ff 100%) !important;
+        color: #fff !important;
+        padding: 16px 16px 18px !important;
+      }
+
+      /* Soft wave glow */
+      .n8n-chat__header::after {
+        content: "";
+        display: block;
+        height: 14px;
+        margin: 10px -16px -18px;
+        background: radial-gradient(
+          120% 100% at 50% 0%,
+          rgba(255, 255, 255, 0.55) 0%,
+          rgba(255, 255, 255, 0) 60%
+        );
+      }
+
+      /* Messages background */
+      .n8n-chat__messages {
+        background: #f5f8ff !important;
+      }
+
+      /* Assistant bubble */
+      .n8n-chat__message--assistant .n8n-chat__message-content {
+        background: #ffffff !important;
+        border: 1px solid rgba(15, 23, 42, 0.06) !important;
+        color: #0f172a !important;
+        border-radius: 18px 18px 18px 8px !important;
+        box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06) !important;
+      }
+
+      /* User bubble */
+      .n8n-chat__message--user .n8n-chat__message-content {
+        background: linear-gradient(135deg, #2f6bff 0%, #4f8dff 100%) !important;
+        color: #fff !important;
+        border-radius: 18px 18px 8px 18px !important;
+        box-shadow: 0 10px 22px rgba(47, 107, 255, 0.25) !important;
+      }
+
+      /* Input area */
+      .n8n-chat__input {
+        border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
+        background: #ffffff !important;
+        padding: 12px !important;
+      }
+
+      /* Input field */
+      .n8n-chat__input textarea,
+      .n8n-chat__input input {
+        border-radius: 14px !important;
+        border: 1px solid rgba(15, 23, 42, 0.1) !important;
+        background: #fff !important;
+      }
+
+      /* Launcher button */
+      .n8n-chat__launcher {
+        width: 62px !important;
+        height: 62px !important;
+        border-radius: 999px !important;
+        background: radial-gradient(
+          circle at 30% 30%,
+          #7bb1ff 0%,
+          #2f6bff 45%,
+          #2458db 100%
+        ) !important;
+        box-shadow: 0 18px 40px rgba(47, 107, 255, 0.35) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -112,11 +220,12 @@
 
     <!-- ✅ n8n Chat Widget -->
     <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
 
       createChat({
-        webhookUrl: 'https://n8ngoat.app.n8n.cloud/webhook/5a7ca8ce-2282-4137-a405-725028a705b9/chat',
-        position: 'bottom-right'
+        webhookUrl:
+          "https://n8ngoat.app.n8n.cloud/webhook/5a7ca8ce-2282-4137-a405-725028a705b9/chat",
+        position: "bottom-right",
       });
     </script>
   </body>
