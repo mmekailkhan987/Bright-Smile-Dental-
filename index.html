@@ -101,9 +101,23 @@
           scrollbar-width: none;
       }
     </style>
+
+    <!-- ✅ n8n Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="./index.tsx"></script>
+
+    <!-- ✅ n8n Chat Widget -->
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://n8ngoat.app.n8n.cloud/webhook/5a7ca8ce-2282-4137-a405-725028a705b9/chat',
+        position: 'bottom-right'
+      });
+    </script>
   </body>
 </html>
